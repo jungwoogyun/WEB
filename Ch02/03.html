@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //delete연산자 : 멤버제거에 사용 
+    
+    // var person={
+    //     name:"홍길동",
+    //     age : 40,
+    //     height: 166.7,
+    //     weight:70,
+    //     addr : "대구",
+    //     gender : "M",
+    //     toString : function(){
+    //         alert(this.name+"\n"+this.age+"\n"+this.height
+    //         +"\n"+this.weight+"\n"+this.addr+"\n"+this.gender)
+    //     },
+    //     talk : function(){
+    //         document.write(this.name + " 님이 말합니다<br>");
+    //     }
+    // }
+    // delete person.age;      //age 속성 제거 
+    // delete person.talk;     //talk 기능 제거 
+    // //person.toString();
+    // person.talk();
+
+        //delete 배열 요소 제거
+
+        // var arr= [1,2,3];
+        // delete arr[1];
+        // document.write(arr+"<br>");
+        // document.write(typeof arr[0]+"<br>");
+        // document.write(typeof arr[1]+"<br>");
+        // document.write(typeof arr[2]+"<br>");
+        // document.write(arr.length);
+
+    
+    </script>
+
+    <div>NAME : <span id="name"></span></div>
+    <div>AGE : <span id="age"></span></div>
+    <div>HEIGHT : <span id="height"></span></div>
+    <div>WEIGHT : <span id="weight"></span></div>
+    <div>ADDR : <span id="addr"></span></div>
+    <button onclick="person.toString()">ToString()</button>
+    <script>
+    //다음 span태그에 person 의 멤버값들을 각각 넣어보세요 
+     var person={
+        name:"홍길동",
+        age : 40,
+        height: 166.7,
+        weight:70,
+        addr : "대구",
+        gender : "M",
+        toString : function(){
+            alert(this.name+"\n"+this.age+"\n"+this.height
+            +"\n"+this.weight+"\n"+this.addr+"\n"+this.gender)
+        },
+        talk : function(){
+            document.write(this.name + " 님이 말합니다<br>");
+        }
+    }
+    //여기서 작성합니다(document.getElementById(id명)의 innerHTML을 사용합니다 )
+    document.getElementById("name").innerHTML=person.name;
+    document.getElementById("age").innerHTML = person.age;
+    </script>
+</body>
+</html>

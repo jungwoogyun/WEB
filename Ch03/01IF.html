@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tmp"></div>
+    <script>
+
+        //기본 if 문
+            // var num1=prompt("첫번째 수 입력");
+            // num1 = parseInt(num1);
+            // var num2=prompt("두번째 수 입력");
+            // num2 = parseInt(num2);
+            // if(num1>num2)
+            // {
+            //     document.write("큰수 : " + num1);
+            // }
+            // else{
+            //     document.write("큰수 : " + num2);
+            // }
+
+        //else if 문
+        //국영수 점수받아서 평균 60점 이상이고 각부분점수가 40점 이상일때 
+        //합격을 출력 ! 그게 아니면 불합격
+        kor = parseInt(prompt("국어"));
+        eng = parseInt(prompt("영어"));
+        mat =parseInt( prompt("수학"));
+        avr = (kor + eng + mat)/3;
+        if(kor<=40){
+            alert("불합격");
+        }else if(eng<=40){
+            alert("불합격");
+        }else if(mat<=40){
+            alert("불합격");
+        }else if(avr<=60){
+            alert("불합격");
+        }else{
+            alert("합격");
+        }
+    
+        
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
