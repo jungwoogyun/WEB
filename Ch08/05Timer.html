@@ -11,14 +11,34 @@
     <button onclick="stopimg()">Stop</button>
     <hr>
     <div style="width:500px;height:100px; border:1px solid gray; padding:5;">
-        <img src="html.png" style="width:80px;height:80px;margin-top:5px;">
+        <img src="html.png" style="width:80px;height:80px;margin-top:5px;" id=imgtg>
     </div>
+    <style>
+        img{
+            position:relative;
+            top:0px;
+            left:0px;
+        }
+    </style>
     <script>
+        w=null;
         function startimg(){
-
+            //setInterval함수로 moving함수를 2초간격으로 실행
+        }
+        function moving() {
+             //setTimeout함수로 1초후에 right함수를 실행
+             //setTimeout함수로 2초후에 left함수를 사용
+        }
+        function right(){
+             //imgtg를 position right:80%설정
+             //transition 속성의 1s 설정 
+        }
+        function left(){
+            //imgtg를 position left:0%설정
+            //transition 속성 1s 설정
         }
         function stopimg(){
-            
+            //setInterval을 clear 
         }
 
     </script>
