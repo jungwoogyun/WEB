@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        HTML 내 이벤트 처리 속성 사용
+     -->
+
+     <!-- <style>
+         p{width:200px;height:100px;border:1px solid gray;
+            font-size:32px;
+        }
+     </style>
+     <p id="p1" onclick="func1(this)" onmouseover="func2(this)" onmouseleave="func3(this)"> 기본 내용</p>
+
+     <script>
+        var p1tg=document.getElementById("p1");
+        function func1(){
+            //alert(event.type+" "+event.target);
+            event.target.innerHTML="클릭함";
+        }
+        function func2(){
+            event.target.innerHTML="마우스Over";
+        }
+        function func3(){
+            event.target.innerHTML="마우스leave";
+        }
+
+     </script> -->
+
+     <!-- 
+         Javscript Event처리 함수를 사용 .addEventListener('이벤트명','실행함수');
+      -->
+ 
+      <!-- <style>
+        p{width:200px;height:100px;border:1px solid gray;
+           font-size:32px;
+       }
+    </style>
+    <p id="p1"> 기본 내용</p>
+
+    <script>
+       var p1tg=document.getElementById("p1");
+
+       p1tg.addEventListener('click', function(){
+        //    p1tg.innerHTML="클릭함!";
+        event.target.innerHTML="클릭함!!";
+       });
+       p1tg.addEventListener('mouseover',function(){
+        event.target.innerHTML="마우스Over!!";
+       })    
+       //mouseleave 이벤트 처리만드세요~
+       p1tg.addEventListener('mouseleave',function(){
+        event.target.innerHTML="마우스leave!!";
+       })   
+       
+
+    </script> -->
+   
+
+    <!-- 문제 -->
+
+    <button id=btn1>버튼1</button> <button id=btn2>버튼2</button>
+    <hr>
+    <div id=result style="width:300px;height:100px;border:1px solid gray;">
+
+    </div>
+    <script>
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var result=document.getElementById("result");
+        //버튼1을 클릭할때          ->   id reault에 '버튼1클릭함' 문자열이 들어감
+        btn1.addEventListener('click',function(){
+            result.innerHTML="<h2>Btn1 Click!</h2>";
+        });
+        //버튼1을 마우스Over할때    ->   id reault에 '버튼1Over' 문자열이 들어감
+        btn1.addEventListener('mouseover',function(){
+            result.innerHTML="<h2>Btn1 Mouseover!</h2>";
+        });
+        //버튼1을 마우스leave할때   ->   id reault에 '버튼1Leave' 문자열이 들어감
+        btn1.addEventListener('mouseleave',function(){
+            result.innerHTML="<h2>Btn1 Mouseleave!</h2>";
+        });
+        //버튼2을 클릭할때          ->   id reault에 '버튼2클릭함' 문자열이 들어감
+        btn2.addEventListener('click',function(){});
+        //버튼2을 마우스Over할때    ->   id reault에 '버튼2Over' 문자열이 들어감
+        btn2.addEventListener('mouseover',function(){});
+        //버튼2을 마우스leave할때   ->   id reault에 '버튼2Leave' 문자열이 들어감
+        btn2.addEventListener('mouseleave',function(){});
+
+    </script>
+
+
+</body>
+</html>
