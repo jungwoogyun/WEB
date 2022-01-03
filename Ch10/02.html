@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #wrapper1{width:100%;height:1000px;}
+        #wrapper1{
+            width:60%;height:500px;border:1px solid gray;
+            position:relative;
+            left:0px;
+            top:0px;
+        }
         #modal{display:none;}
     </style>
     <script>
         function openmodal(){
-            alert("TEST");
+           
             //코드완성할것
             //1 백그라운드를 생성
+
             //2 백그라운드를 wrapper1에 연결
             //3 modal을 wrapper1에 연결
         }
@@ -23,13 +29,14 @@
     </script>
 </head>
 <body>
-    <button onclick="openmodal()">Modal</button>
+    
     
     <div id=wrapper1>
-            <div id="modal">
-                <button onclick="closemodal()">종료</button>
-                    모달창입니다~
-            </div>
+        <button onclick="openmodal()">Modal</button>
+        <div id="modal">
+            <button onclick="closemodal()">종료</button>
+                   모달창입니다~
+        </div>
     </div>
     
 </body>
