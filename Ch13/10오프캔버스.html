@@ -25,6 +25,21 @@
             <div id='meta-header' class='row' style="height:30px">
                 <div class='col-md-3'>
                     <!-- 오프캔버스(LEFT) -->
+                    <a class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasTop">전체메뉴</a>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasTopLabel">
+                      <div class="offcanvas-header">
+                        <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        ...
+                      </div>
+                    </div>
+
+
+
+
                 </div>
                 <div class='col-md-6'></div>
                 <div class='col-md-3' style='text-align:right;'>
@@ -39,7 +54,46 @@
                               </svg>
                         </div>
                         <div class="offcanvas-body">
-                    
+                            <!-- 폼 -->
+                            <form>
+                            <div id=login style="text-align:left;">
+                                <div class='row m-3'>
+                                    <div class='col'>
+                                        <label class="form-label">Email</label>
+                                        <input class='form-control' placeholder="example@example.com">
+                                    </div>
+                                </div>
+                                <div class='row m-3'>
+                                    <div class='col'>
+                                        <label class="form-label">Password</label>
+                                        <input type=password class='form-control' placeholder="Enter password">
+                                    </div>
+                                </div>
+                                <div class='row m-3'>
+                                    <div class='col-md-6'>
+                                        <input type='checkbox' class='form-check-input'>
+                                        &nbsp;<span>아이디 저장</span>
+                                    </div>
+                        
+                                    <div class='col-md-6'>
+                                        <input type='checkbox' class='form-check-input'>
+                                        &nbsp;<span>패스워드 저장</span> 
+                                    </div>
+                                </div>
+                                <div class='row m-3'>
+                                    <div class='col'>
+                                        <input type=submit value=LOGIN class='btn btn-primary form-control'>
+                                    </div>
+                                </div>
+                                <div class='row m-3'>
+                                    <div class='col'>
+                                        <button class='btn btn-secondary form-control'>JOIN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
                         </div>    
 
 
